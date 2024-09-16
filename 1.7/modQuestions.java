@@ -12,7 +12,7 @@ public class Main {
         int numPlayers = scanner.nextInt();
         int teams = numPlayers / 7;
         int teamsRemainer = numPlayers % 7;
-        System.out.println("There will be " + teams + " Teams, and " + teamsRemainer + " players left over");
+        System.out.println("There will be " + teams + " Teams, and " + teamsRemainer + " player(s) left over");
         System.out.println("\nQuestion 2: Time\n");
         System.out.println("Enter time in minutes");
         int time = scanner.nextInt();
@@ -23,13 +23,13 @@ public class Main {
         System.out.println("How much flower pots to ship: ");
         int boxes = scanner.nextInt();
         int vbigbox = boxes / 9;
-        System.out.println("We will use " + vbigbox + " very big boxes");
+        System.out.println("We will use " + vbigbox + " very big box(es)");
         int vbigboxR = boxes % 9;
         int bigBox = vbigboxR / 4;
-        System.out.println("We will use " + bigBox + " big boxes");
+        System.out.println("We will use " + bigBox + " big box(es)");
         int bigBoxR = vbigboxR % 4;
         int smallBox = bigBoxR / 1;
-        System.out.println("We will use " + smallBox + " small boxes");
+        System.out.println("We will use " + smallBox + " small box(es)");
 
     }
 }
