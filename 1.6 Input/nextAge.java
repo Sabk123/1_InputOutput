@@ -3,16 +3,16 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner kidAge = new Scanner(System.in);
-        System.out.println("Enter age of first kid");
+        System.out.println("Enter age of the youngest kid");
         int kid1 = kidAge.nextInt();
         Scanner kidDifference = new Scanner(System.in);
-        System.out.println("Enter age differences between the kids");
-        int ageDifference = kidDifference.nextInt();
-        System.out.println("Child one is " + kid1);
-        int kid2 = kid1 + ageDifference;
-        System.out.println("Child two is " + kid2);
-        int kid3 = kid2 + ageDifference;
-        System.out.println("Child three is " + kid3);
+        System.out.println("Enter age for middle child");
+        int kid2 = kidDifference.nextInt();
+        System.out.println("Child #1 age: " + kid1);
+        System.out.println("Child #2 age: " + kid2);
+        int ageDiff = kid2 - kid1;
+        int kid3 = ageDiff + kid2;
+        System.out.println("The oldest child is " + kid3);
 
     }
 }
